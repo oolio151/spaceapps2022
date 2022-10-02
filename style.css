@@ -1,0 +1,118 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  font-family: 'Courier New', Courier, monospace;
+}
+canvas {
+  display: block;
+}
+
+
+#heading{
+  color: black;
+  background-color: #e6f5ff;
+  padding: 10px;
+  text-align: center;
+
+}
+a{
+  text-decoration: none
+} 
+#heading, a{
+  color:black
+}
+p{
+  padding-left: 60px;
+  padding-right: 60px;
+  color: white;
+  font-size: 1.35em;
+}
+#links{
+  padding-left: 60px;
+  padding-right: 60px;
+  color: white;
+  font-size: 1em;
+}
+
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h3{
+  padding-left: 60px;
+  padding-right: 60px;
+  color: white;
+  font-size: 1.35em;
+}
+#caption{
+  text-align: center;
+  color: white;
+  font-size: 1em;
+}
+#interactive{
+  display: flex;
+  justify-content: center;
+
+}
+#effectsLink{
+  padding-left: 40px;
+  padding-right: 60px;
+  color: grey;
+  font-size: .75em;
+}
+#info{
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+#grid:hover{
+  color:blue;
+  animation-name: big;
+  animation-duration: 0.5s;
+  animation-fill-mode: forwards;
+}
+
+#grid{
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 16px;
+  animation-name: bigr;
+  animation-duration: 0.5s;
+  animation-fill-mode: backwards;
+}
+
+#hi-rohe{
+  margin-top: 3em;
+}
+
+#bodytext, h3{
+  text-align: center;
+}
+
+@keyframes big {
+  from {font-size: 16px;}
+  to {font-size: 24px;}
+}
+
+@keyframes bigr {
+  from {font-size: 24px;}
+  to {font-size: 16px;}
+}
+
+body {
+  animation: fadeInAnimation ease 2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
